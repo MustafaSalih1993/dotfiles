@@ -1,4 +1,0 @@
-rofi.modi:                           drun
-rofi.font:                           SauceCodePro Nerd Font Mono 12
-rofi.theme: 			     /usr/share/rofi/themes/android_notification.rasi
-rofi.show-icons:                     true
