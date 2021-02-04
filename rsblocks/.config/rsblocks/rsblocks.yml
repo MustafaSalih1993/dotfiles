@@ -62,7 +62,7 @@ loadavg:
   
 uptime:
   icon: ''
-  enabled: false
+  enabled: true
   delay: 60.0
 
   
