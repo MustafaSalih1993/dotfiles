@@ -1,5 +1,5 @@
 function fish_greeting
-    set -l art_path $HOME"/repos/Ascii_arts/ascii_files/"
+    set -l art_path $HOME"/repos/ascii-arts/ascii_files/"
     
     set -l alien "$art_path""alien"
     set -l amongus "$art_path""amongus"
@@ -22,11 +22,11 @@ function fish_greeting
 	case 1
 	    cat $skull
 	case 2
-	    cat $poison | lolcat
+	    cat $poison
 	case 3
 	    cat $horn
 	case 4
-	    cat $dog | lolcat
+	    cat $dog
 	case 5
 	    cat $bird
 	case 6

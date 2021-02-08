@@ -24,7 +24,7 @@ time:
   
 memory:
   enabled: true
-  icon: '▦'
+  icon: ''
   delay: 2.0
 
   

@@ -1,3 +1,20 @@
+mouse:
+  url:
+    # URL launcher
+    #
+    # This program is executed when clicking on a text which is recognized as a
+    # URL. The URL is always added to the command as the last parameter.
+    #
+    # When set to `launcher: None`, URL launching will be disabled completely.
+    #
+    # Default:
+    #   - (macOS) open
+    #   - (Linux/BSD) xdg-open
+    #   - (Windows) explorer
+    launcher:
+      program: firefox-bin
+    #  args: []
+
 env:
   TERM: xterm-256color
 
@@ -11,7 +28,6 @@ scrolling:
 
 # Font configuration
 font:
-  # Normal (roman) font face
   normal:
     family: SauceCodePro Nerd Font Mono
     style: Regular
