@@ -4,13 +4,13 @@
 (package-initialize)
 
 ;; Sidebar file explorer
-;(add-to-list 'load-path "~/.local/share/icons-in-terminal")
-;(add-to-list 'load-path "~/cloned/sidebar.el")
-;(require 'sidebar)
-;(global-set-key (kbd "C-x C-f") 'sidebar-open)
-;(global-set-key (kbd "C-x C-a") 'sidebar-buffers-open)
+(add-to-list 'load-path "~/.local/share/icons-in-terminal")
+(add-to-list 'load-path "~/cloned/sidebar.el")
+(require 'sidebar)
+(global-set-key (kbd "C-x C-f") 'sidebar-open)
+(global-set-key (kbd "C-x C-a") 'sidebar-buffers-open)
 
-;(setq bdf-directory-list '("/usr/share/fonts"))
+
 ;; Custom Function to run astyle formatting C code buffer
 (defun astyle-this-buffer()
   (interactive)
@@ -107,7 +107,7 @@
  ;; If there is more than one, they won't work right.
  '(custom-safe-themes
    '("8979b25357daaaa8e48a1cea1ea84c42990f2531e0f50f33efa6738e9f8ace56" "2fa74c79bdd65bffa2d7a81c5c1ea3b00166a4d3e4a01b8adba310e791b6fa1e" default))
- '(package-selected-packages '(lsp-mode company yaml-mode)))
+ '(package-selected-packages '(lsp-ui lsp-mode company yaml-mode)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
