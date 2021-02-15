@@ -41,7 +41,6 @@
 (setq elfeed-feeds
       '(("https://github.com/MustafaSalih1993.private.atom?token=AI4H4KB2N7GWJOYYXQPR35V6GLWDQ" MyGithub)
         ("https://distrowatch.com/news/dwd.xml" Distrowatch Distro)
-	("https://www.reddit.com/r/emacs.rss" emacs)
 	("https://www.reddit.com/r/gentoo.rss" gentoo)))
 
 
@@ -134,7 +133,17 @@
 
 ;; automatic inserted shit
 (custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
  '(custom-safe-themes
-   '("8979b25357daaaa8e48a1cea1ea84c42990f2531e0f50f33efa6738e9f8ace56" "2fa74c79bdd65bffa2d7a81c5c1ea3b00166a4d3e4a01b8adba310e791b6fa1e" default)))
+   '("8979b25357daaaa8e48a1cea1ea84c42990f2531e0f50f33efa6738e9f8ace56" "2fa74c79bdd65bffa2d7a81c5c1ea3b00166a4d3e4a01b8adba310e791b6fa1e" default))
+ '(package-selected-packages
+   '(yaml-mode rust-mode projectile ov lsp-ui frame-local elfeed company)))
 (custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
  )

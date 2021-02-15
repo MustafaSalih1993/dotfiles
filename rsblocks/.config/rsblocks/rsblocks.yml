@@ -3,11 +3,18 @@
 seperator: '┃'
 
 
+bitcoins:
+  icon: ''
+  delay: 7200.0  # 2 hours
+  symbol: 'BTC-USD'
+  enabled: false
+
+
 netspeed:
   transmit_icon: ''
   recieve_icon: ''
   interface: 'wlo1'
-  enabled: true
+  enabled: false
 
   
 pub_ip:

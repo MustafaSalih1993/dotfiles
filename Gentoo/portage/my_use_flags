@@ -1,0 +1,23 @@
+app-text/ghostscript-gpl cups
+sys-boot/grub mount
+x11-libs/libfm gtk
+app-admin/doas persist
+app-crypt/pinentry gtk
+app-editors/emacs gui xft
+app-shells/fish nls
+media-gfx/gimp -vala
+media-sound/spotify -systray -libnotify -cups
+net-wireless/wpa_supplicant -fils -mbo -mesh
+www-client/firefox-bin ar
+x11-terms/alacritty X
+x11-terms/xterm truetype unicode sixel
+app-admin/pass fish-completion dmenu
+x11-misc/picom drm opengl
+
+
+# required by app-shells/fish
+dev-libs/libpcre pcre32
+# required by app-misc/neofetch
+www-client/w3m imlib
+# required by media-gfx/gimp
+media-libs/gegl cairo
