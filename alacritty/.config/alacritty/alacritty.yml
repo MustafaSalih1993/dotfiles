@@ -1,16 +1,5 @@
 mouse:
   url:
-    # URL launcher
-    #
-    # This program is executed when clicking on a text which is recognized as a
-    # URL. The URL is always added to the command as the last parameter.
-    #
-    # When set to `launcher: None`, URL launching will be disabled completely.
-    #
-    # Default:
-    #   - (macOS) open
-    #   - (Linux/BSD) xdg-open
-    #   - (Windows) explorer
     launcher:
       program: firefox-bin
     #  args: []
@@ -229,7 +218,7 @@ colors: *tokyo-night
 background_opacity: 0.80
 
 # Live config reload (changes require restart)
-#live_config_reload: true
+live_config_reload: true
 
 # Send ESC (\x1b) before characters when alt is pressed.
 #alt_send_esc: true
