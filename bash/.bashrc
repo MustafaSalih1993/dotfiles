@@ -23,12 +23,11 @@ source "$HOME/.cargo/env"
 
 alias la="lsd -A --color=auto"
 alias ls="lsd  --color=auto"
+alias ll="lsd -l  --color=auto"
 alias ..="cd .."
 alias e="emacs -nw"
 
 
-export GIT_PS1_SHOWCOLORHINTS=1
 export GIT_PS1_SHOWDIRTYSTATE=1
 export PS1="\n\[$(tput setaf 13)\]┏━━━┃\[$(tput setaf 15)\]\u\[$(tput setaf 60)\]@\[$(tput setaf 15)\]\h\[$(tput setaf 13)\]┃\[$(tput setaf 2)\]\$(__git_ps1)\[$(tput setaf 13)\]┃\[$(tput setaf 1)\]\w\[$(tput setaf 13)\]┃\n┃\n\n\[$(tput sgr0)\]$ "
 
-# export PS1="\n\$(__git_ps1)\n\[$(tput setaf 13)\][\[$(tput setaf 15)\]\u\[$(tput setaf 60)\]@\[$(tput setaf 15)\]\h\[$(tput setaf 15)\] \W\[$(tput setaf 13)\]]  \[$(tput sgr0)\]"
