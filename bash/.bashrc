@@ -20,14 +20,22 @@ fi
 source "$HOME/.config/git-prompt.sh"
 source "$HOME/.cargo/env"
 
-
+# ls command aliases
 alias la="lsd -A --color=auto"
 alias ls="lsd  --color=auto"
 alias ll="lsd -l  --color=auto"
+# alias up directory
 alias ..="cd .."
+# starts emacs without GUI
 alias e="emacs -nw"
-
-
+# update Gentoo mirrors by selecting the fastest 3 mirrors
+alias mkmirror="doas mirrorselect -s3 -b10 -D"
+# update Gentoo repository and update the system and clean after
+alias up="doas emerge -uND --with-bdeps=y @world &&\
+ doas emerge --depclean &&\
+ doas eclean-dist --deep"
+# Showing dirty status in git directories
 export GIT_PS1_SHOWDIRTYSTATE=1
-export PS1="\n\[$(tput setaf 13)\]┏━━━┃\[$(tput setaf 15)\]\u\[$(tput setaf 60)\]@\[$(tput setaf 15)\]\h\[$(tput setaf 13)\]┃\[$(tput setaf 2)\]\$(__git_ps1)\[$(tput setaf 13)\]┃\[$(tput setaf 1)\]\w\[$(tput setaf 13)\]┃\n┃\n\n\[$(tput sgr0)\]$ "
-
+# PS1/prompt
+PS1="\n┃\u@\h┃\$(__git_ps1)┃\w"
+PS1="${PS1}┃\n\n❯❯❯ "

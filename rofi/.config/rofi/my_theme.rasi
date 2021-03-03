@@ -1,0 +1,48 @@
+* {
+    background-color:     #1a1b26;
+    bg2:                  #444b6a;
+    fg:                   #a9b1d6;
+    fg-highlight:         #b9f27c;
+    fg-input:             #ad8ee6;
+    border-color:         #32344a;
+    font:		  "Exo-Regular 12";
+}
+
+#window {
+    background-color:     @bg;
+    border-color:         @border-color;
+    border:               2;
+    border-radius:        3;
+    width:                30%;
+}
+
+#listview {
+    columns:              1;
+    dynamic:              true;
+    padding:              10;
+    lines:                10;
+}
+
+#element {
+    padding:              5;
+    text-color:           @fg;
+    background-color:     @bg;
+}
+
+#element.selected.normal {
+    background-color:     @bg2;
+    text-color:           @fg-highlight;
+}
+
+#prompt {
+    enabled:              true;
+    padding:              10 10 10 10;
+    text-color:           @fg-input;
+    font:                 @font ;
+}
+
+#entry {
+    padding:              10;
+    text-color:           @fg-input;
+    font:                 @font;
+}
