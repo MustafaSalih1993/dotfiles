@@ -16,6 +16,13 @@ fi
 
 
 # Put your fun stuff here.
+NORMAL="\e[0m"
+RED="\e[0;31m"
+GREEN="\e[0;32m"
+BLUE="\e[0;34m"
+#YELLOW='\e[0;33m'
+#PURPLE='\e[0;35m'
+CYAN="\e[0;36m"
 
 source "$HOME/.config/git-prompt.sh"
 source "$HOME/.cargo/env"
@@ -37,5 +44,8 @@ alias up="doas emerge -uND --with-bdeps=y @world &&\
 # Showing dirty status in git directories
 export GIT_PS1_SHOWDIRTYSTATE=1
 # PS1/prompt
+# PS1="\n$RED┃$NORMAL\u@\h$GREEN┃\$(__git_ps1)$GREEN┃$NORMAL\w"
+# PS1="${PS1}$BLUE┃\n\n$RED❯$GREEN❯$BLUE❯$NORMAL"
 PS1="\n┃\u@\h┃\$(__git_ps1)┃\w"
-PS1="${PS1}┃\n\n❯❯❯ "
+PS1="${PS1}┃\n\n❯❯❯"
+export PS1="${PS1} "

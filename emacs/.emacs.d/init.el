@@ -140,7 +140,7 @@
  '(custom-safe-themes
    '("8979b25357daaaa8e48a1cea1ea84c42990f2531e0f50f33efa6738e9f8ace56" "2fa74c79bdd65bffa2d7a81c5c1ea3b00166a4d3e4a01b8adba310e791b6fa1e" default))
  '(package-selected-packages
-   '(yaml-mode rust-mode projectile ov lsp-ui frame-local elfeed company)))
+   '(json-mode yaml-mode rust-mode projectile ov lsp-ui frame-local elfeed company)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
