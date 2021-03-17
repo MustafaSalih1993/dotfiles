@@ -44,8 +44,8 @@ alias up="doas emerge -uND --with-bdeps=y @world &&\
 # Showing dirty status in git directories
 export GIT_PS1_SHOWDIRTYSTATE=1
 # PS1/prompt
-# PS1="\n$RED┃$NORMAL\u@\h$GREEN┃\$(__git_ps1)$GREEN┃$NORMAL\w"
-# PS1="${PS1}$BLUE┃\n\n$RED❯$GREEN❯$BLUE❯$NORMAL"
-PS1="\n┃\u@\h┃\$(__git_ps1)┃\w"
-PS1="${PS1}┃\n\n❯❯❯"
-export PS1="${PS1} "
+PS1="\n$RED┃$NORMAL\u@\h$GREEN┃\$(__git_ps1)$GREEN┃$NORMAL\w"
+PS1="${PS1}$BLUE┃\n\n$RED❯$GREEN❯$BLUE❯$NORMAL "
+# PS1="\n┃\u@\h┃\$(__git_ps1)┃\w"
+# PS1="${PS1}┃\n\n❯❯❯"
+# export PS1="${PS1} "

@@ -17,7 +17,6 @@
 (global-set-key (kbd "C-x C-a") 'sidebar-buffers-open)
 
 
-
 ;; general shit
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes/") ;; load custom path for themes
 (defalias 'yes-or-no-p 'y-or-n-p)                          ;; y - n instead
@@ -42,6 +41,16 @@
       '(("https://github.com/MustafaSalih1993.private.atom?token=AI4H4KB2N7GWJOYYXQPR35V6GLWDQ" MyGithub)
         ("https://distrowatch.com/news/dwd.xml" Distrowatch Distro)
 	("https://www.reddit.com/r/gentoo.rss" gentoo)))
+
+
+;; Custom Function to show markdown in browser
+;; M-x httpd-start
+;; M-x imp-mode
+;; go to browser
+(defun markdown-html (buffer)
+  (princ (with-current-buffer buffer
+    (format "<!DOCTYPE html><html><title>Impatient Markdown</title><xmp theme=\"united\" style=\"display:none;\"> %s  </xmp><script src=\"http://strapdownjs.com/v/0.2/strapdown.js\"></script></html>" (buffer-substring-no-properties (point-min) (point-max))))
+	 (current-buffer)))
 
 
 ;; Custom Function to run astyle formatting C code buffer

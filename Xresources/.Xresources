@@ -1,5 +1,5 @@
 XTerm*faceName: SauceCodePro Nerd Font Mono
-XTerm*faceSize: 10
+XTerm*faceSize: 12
 XTerm.vt100.backarrowKey: false
 XTerm.ttyModes: erase ^?
 XTerm*metaSendsEscape: true
