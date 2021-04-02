@@ -2,4 +2,22 @@ net-wireless/broadcom-sta ~amd64
 x11-drivers/nvidia-drivers ~amd64
 x11-terms/alacritty ~amd64
 app-admin/doas ~amd64
-# dev-lang/perl ~amd64
+media-sound/spotify ~amd64
+sys-apps/mdcat ~amd64
+media-gfx/tai ~amd64
+app-misc/tai ~amd64
+sys-apps/bat ~amd64
+dev-util/ccls ~amd64
+dev-util/cargo-ebuild ~amd64
+net-im/telegram-desktop-bin ~amd64
+app-editors/vscodium-bin ~amd64
+
+sys-apps/procs ~amd64
+
+x11-misc/pcmanfm ~amd64
+x11-libs/libfm ~amd64
+x11-libs/libfm-extra ~amd64
+lxde-base/lxappearance ~amd64
+lxde-base/menu-cache ~amd64
+
+

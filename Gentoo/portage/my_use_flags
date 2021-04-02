@@ -1,19 +1,23 @@
-app-text/ghostscript-gpl cups
-sys-boot/grub mount
-x11-libs/libfm gtk
 app-admin/doas persist
-app-crypt/pinentry gtk
-app-editors/emacs gui xft
+app-admin/pass fish-completion
+app-crypt/gcr gtk
+app-crypt/pinentry gtk gnome-keyring
+app-editors/emacs gui xft libxml2
 app-shells/fish nls
+app-text/poppler cairo
 media-gfx/gimp -vala
 media-sound/spotify -systray -libnotify -cups
+media-video/ffmpeg vaapi vorbis x264
+media-video/simplescreenrecorder x264 vorbis
 net-wireless/wpa_supplicant -fils -mbo -mesh
-www-client/firefox-bin ar
+sys-boot/grub mount
+sys-libs/zlib minizip
+x11-libs/libfm gtk
+x11-misc/picom drm opengl
 x11-terms/alacritty X
 x11-terms/xterm truetype unicode sixel
-app-admin/pass fish-completion dmenu
-x11-misc/picom drm opengl
-
+sys-fs/dosfstools -iconv
+app-emulation/virtualbox qt5
 
 # required by app-shells/fish
 dev-libs/libpcre pcre32
@@ -21,3 +25,19 @@ dev-libs/libpcre pcre32
 www-client/w3m imlib
 # required by media-gfx/gimp
 media-libs/gegl cairo
+
+
+#required by x11-drivers/nvidia-drivers
+media-libs/libglvnd abi_x86_32
+x11-libs/libX11 abi_x86_32
+x11-libs/libXext abi_x86_32
+x11-libs/libvdpau abi_x86_32
+sys-libs/zlib abi_x86_32
+x11-libs/libxcb abi_x86_32
+x11-libs/libXau abi_x86_32
+x11-libs/libXdmcp abi_x86_32
+x11-base/xcb-proto abi_x86_32
+
+# required by app-shells/fish-3.1.2::gentoo
+>=dev-libs/libpcre2-10.35 pcre16 pcre32
+

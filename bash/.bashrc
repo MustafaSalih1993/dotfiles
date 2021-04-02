@@ -17,12 +17,12 @@ fi
 
 # Put your fun stuff here.
 NORMAL="\e[0m"
-RED="\e[0;31m"
-GREEN="\e[0;32m"
-BLUE="\e[0;34m"
+RED="\e[38;2;247;118;142m"
+GREEN="\e[38;2;158;206;106m"
+BLUE="\e[38;2;122;162;247m"
 #YELLOW='\e[0;33m'
 #PURPLE='\e[0;35m'
-CYAN="\e[0;36m"
+CYAN="\e[38;2;68;157;171m"
 
 source "$HOME/.config/git-prompt.sh"
 source "$HOME/.cargo/env"

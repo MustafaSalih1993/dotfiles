@@ -217,7 +217,7 @@ schemes:
 colors: *tokyo-night
 
 # Background opacity
-background_opacity: 0.8
+background_opacity: 0.95
 
 # Live config reload (changes require restart)
 live_config_reload: true
