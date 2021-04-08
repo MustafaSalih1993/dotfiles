@@ -9,7 +9,8 @@
 ;;                        - frame-local
 ;;                        - projectile
 ;;                        - ov
-;;                 
+;;
+;; edit the paths below to point to the 2 cloned repos(above)
 (add-to-list 'load-path "~/.local/share/icons-in-terminal")
 (add-to-list 'load-path "~/cloned/sidebar.el")
 (require 'sidebar)
@@ -28,38 +29,22 @@
 (menu-bar-mode -1)                                         ;; Disable menu bar
 (scroll-bar-mode -1)                                       ;; disabling scrollbar
 (set-frame-font "SauceCodePro Nerd Font Mono-12" nil t)    ;; changing the default font
-(setq backup-directory-alist '(("" . "~/.emacs.d/backup")))
+(setq backup-directory-alist '(("" . "~/.emacs.d/backup")));; backup files dir
+(setq display-line-numbers-type 'relative)                 ;; display the numbers relative
 (setq inhibit-startup-screen t)
 (setq visible-bell 1)
 (show-paren-mode)				           ;; Show Matching parenths
+(simple-modeline-mode)                                     ;; simplemodeline(emacs's bottom line)
 (tool-bar-mode -1)                                         ;; disabling toolbar
 
 
-;; elfeed rss client
-(setq-default elfeed-search-filter "@1-day-ago +unread ")
-(setq elfeed-feeds
-      '(("https://github.com/MustafaSalih1993.private.atom?token=AI4H4KB2N7GWJOYYXQPR35V6GLWDQ" MyGithub)
-        ("https://distrowatch.com/news/dwd.xml" Distrowatch Distro)
-	("https://www.reddit.com/r/gentoo.rss" gentoo)))
-
-
-;; Custom Function to show markdown in browser
-;; M-x httpd-start
-;; M-x imp-mode
-;; go to browser
-(defun markdown-html (buffer)
-  (princ (with-current-buffer buffer
-    (format "<!DOCTYPE html><html><title>Impatient Markdown</title><xmp theme=\"united\" style=\"display:none;\"> %s  </xmp><script src=\"http://strapdownjs.com/v/0.2/strapdown.js\"></script></html>" (buffer-substring-no-properties (point-min) (point-max))))
-	 (current-buffer)))
-
-(defun start-markdown-server ()
-  "starting markdown server"
+;; custom function to reload emacs configs without closing it
+(defun reload-emacs ()
   (interactive)
-  (httpd-start)
-  (impatient-mode)
-)
+  (load-file "~/.emacs.d/init.el"))
 
-;; Custom Function to run astyle formatting C code buffer
+
+;; Custom Function to run astyle formatting C/C++ code buffer
 (defun astyle-this-buffer()
   (interactive)
   (if(buffer-modified-p)
@@ -69,6 +54,31 @@
 	   (shell-quote-argument(buffer-file-name)))
    nil(get-buffer-create "*Astyle Errors*"))
   (revert-buffer t t t))
+
+
+;; Custom Function to show markdown in browser
+;; M-x httpd-start
+;; M-x imp-mode
+;; M-x imp-set-user<TAB>markdown-html
+;; go to browser
+(defun start-markdown-server ()
+  "starting markdown server"
+  (interactive)
+  (httpd-start)
+  (impatient-mode))
+
+(defun markdown-html (buffer)
+  (princ (with-current-buffer buffer
+	   (format "<!DOCTYPE html><html><title>Impatient Markdown</title><xmp theme=\"united\" style=\"display:none;\"> %s  </xmp><script src=\"http://strapdownjs.com/v/0.2/strapdown.js\"></script></html>" (buffer-substring-no-properties (point-min) (point-max))))
+	 (current-buffer)))
+
+
+;; elfeed rss client
+(setq-default elfeed-search-filter "@1-day-ago +unread ")
+(setq elfeed-feeds
+      '(("https://github.com/MustafaSalih1993.private.atom?token=AI4H4KB2N7GWJOYYXQPR35V6GLWDQ" MyGithub)
+        ("https://distrowatch.com/news/dwd.xml" Distrowatch Distro)
+	("https://www.reddit.com/r/gentoo.rss" gentoo)))
 
 
 ;; HOOKS
@@ -125,7 +135,7 @@
 	    (setq company-tooltip-align-annotations t)
 	    (setq company-minimum-prefix-length 2
 		  company-idle-delay 0.0) ;; default is 0.2
-	    (setq display-line-numbers 'relative)
+
 	    ))
 
 
@@ -140,8 +150,8 @@
 	    (setq company-minimum-prefix-length 2
 		  company-idle-delay 0.0) ;; default is 0.2
 	    (setq c-basic-offset 4)
-	    (global-set-key(kbd "C-x C-a") 'astyle-this-buffer) ;; format binding
-	    (global-set-key(kbd "C-x c") 'compile)            ;; compile binding
+	    (global-set-key(kbd "C-c C-f") 'astyle-this-buffer) ;; format binding
+	    (global-set-key(kbd "C-c C-c") 'compile)            ;; compile binding
 	    ))
 
 
@@ -155,7 +165,7 @@
  '(custom-safe-themes
    '("8979b25357daaaa8e48a1cea1ea84c42990f2531e0f50f33efa6738e9f8ace56" "2fa74c79bdd65bffa2d7a81c5c1ea3b00166a4d3e4a01b8adba310e791b6fa1e" default))
  '(package-selected-packages
-   '(json-mode yaml-mode rust-mode projectile ov lsp-ui frame-local elfeed company)))
+   '(simple-modeline json-mode yaml-mode rust-mode projectile ov lsp-ui frame-local elfeed company)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
