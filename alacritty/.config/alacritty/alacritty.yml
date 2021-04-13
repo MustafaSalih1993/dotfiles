@@ -20,11 +20,11 @@ scrolling:
 # Font configuration
 font:
   normal:
-    family: SauceCodePro Nerd Font Mono
+    family: xos4 Terminus #SauceCodePro Nerd Font Mono
     style: Regular
 
   # Point size
-  size: 8.0
+  size: 10.0
 
 
 # shell:

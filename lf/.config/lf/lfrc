@@ -64,7 +64,7 @@ map <c-n> down;
 map <c-p> up;
 map <c-f> open;
 map <c-b> updir;
-map . : set hidden!;
+map h : set hidden!;
 map <a-,> top;
 map <a-.> bottom;
 
