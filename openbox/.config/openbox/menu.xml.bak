@@ -1,0 +1,22 @@
+<openbox_menu>
+<menu id="desktop-app-menu" label="Applications" execute="/usr/bin/openbox-menu"/>
+<menu id="root-menu" label="Openbox 3">
+<separator label="Menu"/>
+<menu id="desktop-app-menu"/>
+<separator label="Openbox"/>
+<item label="Configuration">
+<action name="Execute">
+<command>obconf</command>
+</action>
+</item>
+<item label="Recharger">
+<action name="Reconfigure"/>
+</item>
+<separator label="Session"/>
+<item label="Se déconnecter">
+<action name="Execute">
+<command>lxsession-logout</command>
+</action>
+</item>
+</menu>
+</openbox_menu>

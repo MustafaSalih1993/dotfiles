@@ -85,7 +85,7 @@ unset use_color sh
 alias la="lsd -A --color=auto"
 alias ls="lsd  --color=auto"
 alias ll="lsd -l  --color=auto"
-alias grep='rg --colour=auto'
+alias grep='rg --color=auto'
 # alias up directory
 alias ..="cd .."
 # starts emacs without GUI
@@ -93,4 +93,5 @@ alias e="emacs -nw"
 # update Gentoo mirrors by selecting the fastest 3 mirrors
 alias mkmirror="doas mirrorselect -s3 -b10 -D"
 # update Gentoo repository and update the system
-alias up="doas emerge -uND --with-bdeps=y @world"
+alias up="doas emerge -uUD --with-bdeps=y @world"
+

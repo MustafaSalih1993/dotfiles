@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openbox_menu xmlns="http://openbox.org/"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://openbox.org/">
+  <menu id="root-menu" label="Applications">
+    <item label="File Manager" icon="/home/mustafa/.config/obmenu-generator/icons/af8d408ceedbd3851e418e6c8c37a0bc.png"><action name="Execute"><command><![CDATA[xdg-open .]]></command></action></item>
+    <item label="Terminal" icon="/home/mustafa/.config/obmenu-generator/icons/bfd44217aa16fcfc1b41df495b21c181.png"><action name="Execute"><command><![CDATA[alacritty]]></command></action></item>
+    <item label="Web Browser" icon="/home/mustafa/.config/obmenu-generator/icons/66492fc1f65db39c94569bed9aa10880.png"><action name="Execute"><command><![CDATA[xdg-open http://]]></command></action></item>
+  <separator label="Categories"/>
+  <menu id="0.867708838851289" icon="/home/mustafa/.config/obmenu-generator/icons/22287fed02145a38d5aaa4273cc634b7.png" label="Accessories">
+    <item label="compton" icon="/home/mustafa/.config/obmenu-generator/icons/79706a0a3833a8b5a372c19635a63d02.png"><action name="Execute"><command><![CDATA[compton]]></command></action></item>
+    <item label="File Manager PCManFM" icon="/home/mustafa/.config/obmenu-generator/icons/af8d408ceedbd3851e418e6c8c37a0bc.png"><action name="Execute"><command><![CDATA[pcmanfm]]></command></action></item>
+    <item label="Leafpad" icon="/home/mustafa/.config/obmenu-generator/icons/813a069d25d78b9f57ba01ea3a21d203.png"><action name="Execute"><command><![CDATA[leafpad]]></command></action></item>
+    <item label="picom"><action name="Execute"><command><![CDATA[picom]]></command></action></item>
+    <item label="XEmacs Text Editor" icon="/home/mustafa/.config/obmenu-generator/icons/806bf8bacf4a34d1f4424e6977026fd9.png"><action name="Execute"><command><![CDATA[xemacs]]></command></action></item>
+  </menu>
+  <menu id="0.566894929480867" icon="/home/mustafa/.config/obmenu-generator/icons/61888b868f8f835980ee5538b6dc4cfb.png" label="Development">
+    <item label="GNU Emacs" icon="/home/mustafa/.config/obmenu-generator/icons/1a7e43fd701072ec582d24c2b45c6235.png"><action name="Execute"><command><![CDATA[/usr/bin/emacs]]></command></action></item>
+  </menu>
+  <menu id="0.894550814797309" icon="/home/mustafa/.config/obmenu-generator/icons/d929b687c926180227e0d087d94aa3af.png" label="Graphics">
+    <item label="GNU Image Manipulation Program" icon="/home/mustafa/.config/obmenu-generator/icons/7fdff4c234b63c3f23b6c423bdf1ed90.png"><action name="Execute"><command><![CDATA[gimp-2.10]]></command></action></item>
+  </menu>
+  <menu id="0.988217269858929" icon="/home/mustafa/.config/obmenu-generator/icons/66e52e4fa208a81dceacbc6d70da7575.png" label="Multimedia">
+    <item label="mpv Media Player" icon="/home/mustafa/.config/obmenu-generator/icons/39475279dc2347a89ec82994ef98494c.png"><action name="Execute"><command><![CDATA[mpv --player-operation-mode=pseudo-gui --]]></command></action></item>
+    <item label="SimpleScreenRecorder" icon="/home/mustafa/.config/obmenu-generator/icons/e13779cc82490393a5f053b132fa2bec.png"><action name="Execute"><command><![CDATA[simplescreenrecorder --logfile]]></command></action></item>
+    <item label="Spotify" icon="/home/mustafa/.config/obmenu-generator/icons/1e6e31c1b8efadd244186b291d0b33b9.png"><action name="Execute"><command><![CDATA[spotify]]></command></action></item>
+  </menu>
+  <menu id="0.612946298567369" icon="/home/mustafa/.config/obmenu-generator/icons/018c3f99d06cf14562a8fcedb4bfc348.png" label="Network">
+    <item label="Mozilla Firefox (bin)" icon="/home/mustafa/.config/obmenu-generator/icons/1d8c66813d50ea60416d05c88622b1f0.png"><action name="Execute"><command><![CDATA[firefox-bin]]></command></action></item>
+    <item label="Mozilla Thunderbird (bin)" icon="/home/mustafa/.config/obmenu-generator/icons/1c10746fd3abaac025ee3c87eb4759b8.png"><action name="Execute"><command><![CDATA[thunderbird-bin]]></command></action></item>
+    <item label="Telegram Desktop" icon="/home/mustafa/.config/obmenu-generator/icons/860cd6a950030cc89336b95772b68b9c.png"><action name="Execute"><command><![CDATA[/home/mustafa/Applications/Telegram -workdir /home/mustafa/.local/share/TelegramDesktop/ --]]></command></action></item>
+    <item label="Telegram Desktop" icon="/home/mustafa/.config/obmenu-generator/icons/860cd6a950030cc89336b95772b68b9c.png"><action name="Execute"><command><![CDATA[/home/mustafa/Downloads/telegram/Telegram/Telegram -workdir /home/mustafa/.local/share/TelegramDesktop/ --]]></command></action></item>
+    <item label="Telegram Desktop" icon="/home/mustafa/.config/obmenu-generator/icons/860cd6a950030cc89336b95772b68b9c.png"><action name="Execute"><command><![CDATA[telegram-desktop --]]></command></action></item>
+  </menu>
+  <menu id="0.657005124478005" icon="/home/mustafa/.config/obmenu-generator/icons/22287fed02145a38d5aaa4273cc634b7.png" label="Settings">
+    <item label="ARandR" icon="/home/mustafa/.config/obmenu-generator/icons/32c1584a9b94c941023bb5016c8991dc.png"><action name="Execute"><command><![CDATA[arandr]]></command></action></item>
+    <item label="Customize Look and Feel" icon="/home/mustafa/.config/obmenu-generator/icons/1482fbe3a02d902ffbd1639683fa7450.png"><action name="Execute"><command><![CDATA[lxappearance]]></command></action></item>
+    <item label="Desktop Preferences" icon="/home/mustafa/.config/obmenu-generator/icons/5d20762d759b9b89b71a4bc1e6cc3a1b.png"><action name="Execute"><command><![CDATA[pcmanfm --desktop-pref]]></command></action></item>
+    <item label="NVIDIA X Server Settings" icon="/home/mustafa/.config/obmenu-generator/icons/dce3fa65227f2a9f8f95a8281daa07a3.png"><action name="Execute"><command><![CDATA[nvidia-settings]]></command></action></item>
+    <item label="Openbox Configuration Manager" icon="/home/mustafa/.config/obmenu-generator/icons/61f3de6fd06f9847e869878302ba1980.png"><action name="Execute"><command><![CDATA[obconf]]></command></action></item>
+    <item label="Preferred Applications" icon="/home/mustafa/.config/obmenu-generator/icons/e9d5849706eec263fc4b5dbc88bbaba9.png"><action name="Execute"><command><![CDATA[libfm-pref-apps]]></command></action></item>
+    <item label="Tint2 Settings" icon="/home/mustafa/.config/obmenu-generator/icons/e25fa831dcfce3d855f67af87e68537f.png"><action name="Execute"><command><![CDATA[tint2conf]]></command></action></item>
+  </menu>
+  <menu id="0.689511570284903" icon="/home/mustafa/.config/obmenu-generator/icons/e1692f5aa2f30d063b8a29c15118a59d.png" label="System">
+    <item label="Alacritty" icon="/home/mustafa/.config/obmenu-generator/icons/eea45097c72caa191ffc1fa7f01b6631.png"><action name="Execute"><command><![CDATA[alacritty]]></command></action></item>
+    <item label="File Manager PCManFM" icon="/home/mustafa/.config/obmenu-generator/icons/af8d408ceedbd3851e418e6c8c37a0bc.png"><action name="Execute"><command><![CDATA[pcmanfm]]></command></action></item>
+    <item label="Htop" icon="/home/mustafa/.config/obmenu-generator/icons/881b28cbb057d59879ba7ead0fddaee3.png"><action name="Execute"><command><![CDATA[alacritty -e 'htop']]></command></action></item>
+    <item label="Manage Printing" icon="/home/mustafa/.config/obmenu-generator/icons/4e7023638e3ee889e2fbb66310fb9d97.png"><action name="Execute"><command><![CDATA[/usr/bin/xdg-open http://localhost:631/]]></command></action></item>
+    <item label="NVIDIA X Server Settings" icon="/home/mustafa/.config/obmenu-generator/icons/dce3fa65227f2a9f8f95a8281daa07a3.png"><action name="Execute"><command><![CDATA[nvidia-settings]]></command></action></item>
+    <item label="Oracle VM VirtualBox" icon="/home/mustafa/.config/obmenu-generator/icons/33898ebdfd73db17ab2420744a4ed085.png"><action name="Execute"><command><![CDATA[VirtualBox]]></command></action></item>
+    <item label="Tint2" icon="/home/mustafa/.config/obmenu-generator/icons/83b0b3f21b72873742a7fc29d35bb049.png"><action name="Execute"><command><![CDATA[tint2]]></command></action></item>
+    <item label="UXTerm" icon="/home/mustafa/.config/obmenu-generator/icons/ea530419b119883d5e3ac95b5686463e.png"><action name="Execute"><command><![CDATA[uxterm]]></command></action></item>
+    <item label="XTerm" icon="/home/mustafa/.config/obmenu-generator/icons/ea530419b119883d5e3ac95b5686463e.png"><action name="Execute"><command><![CDATA[xterm]]></command></action></item>
+  </menu>
+  <separator/>
+  <menu id="0.393628664821414" icon="/home/mustafa/.config/obmenu-generator/icons/b0e50bfc0d0488b3f0c7bdf11ec46139.png" label="Advanced Settings">
+  <menu id="0.448941012602891" icon="/home/mustafa/.config/obmenu-generator/icons/966bc929e0181ff804cacd6d7e25770b.png" label="Obmenu-Generator">
+    <item label="Menu Schema" icon="/home/mustafa/.config/obmenu-generator/icons/18d71eb24acd255c5e30b6eb4597deff.png"><action name="Execute"><command><![CDATA[leafpad ~/.config/obmenu-generator/schema.pl]]></command></action></item>
+    <item label="Menu Config" icon="/home/mustafa/.config/obmenu-generator/icons/18d71eb24acd255c5e30b6eb4597deff.png"><action name="Execute"><command><![CDATA[leafpad ~/.config/obmenu-generator/config.pl]]></command></action></item>
+  <separator/>
+    <item label="Generate a static menu" icon="/home/mustafa/.config/obmenu-generator/icons/966bc929e0181ff804cacd6d7e25770b.png"><action name="Execute"><command><![CDATA[obmenu-generator -s -c]]></command></action></item>
+    <item label="Generate a static menu with icons" icon="/home/mustafa/.config/obmenu-generator/icons/966bc929e0181ff804cacd6d7e25770b.png"><action name="Execute"><command><![CDATA[obmenu-generator -s -i -c]]></command></action></item>
+  <separator/>
+    <item label="Generate a dynamic menu" icon="/home/mustafa/.config/obmenu-generator/icons/966bc929e0181ff804cacd6d7e25770b.png"><action name="Execute"><command><![CDATA[obmenu-generator -p]]></command></action></item>
+    <item label="Generate a dynamic menu with icons" icon="/home/mustafa/.config/obmenu-generator/icons/966bc929e0181ff804cacd6d7e25770b.png"><action name="Execute"><command><![CDATA[obmenu-generator -p -i]]></command></action></item>
+  <separator/>
+    <item label="Refresh cache" icon="/home/mustafa/.config/obmenu-generator/icons/4cb66f99e46a61e780eb31d76cc87cd7.png"><action name="Execute"><command><![CDATA[obmenu-generator -d]]></command></action></item>
+  </menu>
+  <menu id="0.182576728345111" icon="/home/mustafa/.config/obmenu-generator/icons/cbd33e85d4e0834359519a4e282b2aeb.png" label="Openbox">
+    <item label="Openbox Autostart" icon="/home/mustafa/.config/obmenu-generator/icons/18d71eb24acd255c5e30b6eb4597deff.png"><action name="Execute"><command><![CDATA[leafpad ~/.config/openbox/autostart]]></command></action></item>
+    <item label="Openbox RC" icon="/home/mustafa/.config/obmenu-generator/icons/18d71eb24acd255c5e30b6eb4597deff.png"><action name="Execute"><command><![CDATA[leafpad ~/.config/openbox/rc.xml]]></command></action></item>
+    <item label="Openbox Menu" icon="/home/mustafa/.config/obmenu-generator/icons/18d71eb24acd255c5e30b6eb4597deff.png"><action name="Execute"><command><![CDATA[leafpad ~/.config/openbox/menu.xml]]></command></action></item>
+    <item label="Reconfigure Openbox" icon="/home/mustafa/.config/obmenu-generator/icons/cbd33e85d4e0834359519a4e282b2aeb.png"><action name="Execute"><command><![CDATA[openbox --reconfigure]]></command></action></item>
+  </menu>
+  </menu>
+    <item label="Exit" icon="/home/mustafa/.config/obmenu-generator/icons/97f63efcb3abe98fab75afa205a91c3b.png"><action name="Exit"/></item>
+  </menu>
+</openbox_menu>
+Obt-Message: Xinerama extension is not present on the server

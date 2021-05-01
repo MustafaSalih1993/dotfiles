@@ -14,7 +14,7 @@ netspeed:
   transmit_icon: ''
   recieve_icon: ''
   interface: 'wlo1'
-  enabled: false
+  enabled: true
 
   
 pub_ip:
@@ -49,9 +49,8 @@ volume:
 
   
 battery:
-  source: 'BAT0'
   icon: ''
-  enabled: false
+  enabled: true
   delay: 120.0
   
 
