@@ -5,16 +5,16 @@ seperator: '┃'
 
 bitcoins:
   icon: ''
-  delay: 7200.0  # 2 hours
-  symbol: 'BTC-USD'
-  enabled: false
+  delay: 60.0 
+  symbol: 'BTC-EUR'
+  enabled: true
 
 
 netspeed:
   transmit_icon: ''
   recieve_icon: ''
   interface: 'wlo1'
-  enabled: true
+  enabled: false
 
   
 pub_ip:
@@ -22,6 +22,12 @@ pub_ip:
   enabled: false
   delay: 120.0
 
+local_ip:
+  icon: ''
+  enabled: false
+  interface: 'wlo1'
+  delay: 120.0
+  
   
 time:
   icon: ''
@@ -50,7 +56,7 @@ volume:
   
 battery:
   icon: ''
-  enabled: true
+  enabled: false
   delay: 120.0
   
 
@@ -68,8 +74,8 @@ loadavg:
   
 uptime:
   icon: ''
-  enabled: true
-  delay: 60.0
+  enabled: false
+  delay: 3.0
 
   
 mpd:
@@ -94,6 +100,6 @@ spotify:
 weather:
   city: 'Ankara'        
   format: '%t'
-  enabled: false
+  enabled: true
   icon: ''
   delay: 7200.0

@@ -1,9 +1,13 @@
 
 
 mouse:
-  url:
-    launcher:
-      program: firefox-bin
+  hints:
+    enabled:
+      - regex: "(https:|http:)\
+        [^\u0000-\u001F\u007F-\u009F<>\"\\s{-}\\^⟨⟩`]+"
+        command: firefox-bin
+    # launcher:
+    #   program: firefox-bin
     #  args: []
 
 env:
@@ -217,7 +221,7 @@ schemes:
 colors: *tokyo-night
 
 # Background opacity
-background_opacity: 0.95
+background_opacity: 0.85
 
 # Live config reload (changes require restart)
 live_config_reload: true
