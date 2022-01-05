@@ -279,37 +279,35 @@ and back in -->
       </action>
     </keybind>
     <keybind key="XF86AudioRaiseVolume">
-  <action name="Execute">
-    <command>sh -c "amixer sset Master 5%+;"</command>
-  </action>
-</keybind>
-
-<keybind key="XF86AudioLowerVolume">
-  <action name="Execute">
-    <command>sh -c "amixer sset Master 5%-;"</command>
-  </action>
-</keybind>
-
-<keybind key="XF86AudioMute">
-  <action name="Execute">
-    <command>sh -c "pactl set-sink-mute 0 true ; pactl set-sink-volume 0 0%"</command>
-  </action>
-</keybind>
-<keybind key="XF86AudioPrev">
-  <action name="Execute">
-    <command>sh -c "playerctl previous; mocp -r"</command>
-  </action>
-</keybind>
-<keybind key="XF86AudioNext">
-  <action name="Execute">
-    <command>sh -c "playerctl next; mocp -f"</command>
-  </action>
-</keybind>
-<keybind key="XF86AudioPlay">
-  <action name="Execute">
-    <command>sh -c "playerctl play-pause; mocp -G"</command>
-  </action>
-</keybind>
+      <action name="Execute">
+        <command>sh -c "amixer sset Master 5%+;"</command>
+      </action>
+    </keybind>
+    <keybind key="XF86AudioLowerVolume">
+      <action name="Execute">
+        <command>sh -c "amixer sset Master 5%-;"</command>
+      </action>
+    </keybind>
+    <keybind key="XF86AudioMute">
+      <action name="Execute">
+        <command>sh -c "pactl set-sink-mute 0 true ; pactl set-sink-volume 0 0%"</command>
+      </action>
+    </keybind>
+    <keybind key="XF86AudioPrev">
+      <action name="Execute">
+        <command>sh -c "playerctl previous; mocp -r"</command>
+      </action>
+    </keybind>
+    <keybind key="XF86AudioNext">
+      <action name="Execute">
+        <command>sh -c "playerctl next; mocp -f"</command>
+      </action>
+    </keybind>
+    <keybind key="XF86AudioPlay">
+      <action name="Execute">
+        <command>sh -c "playerctl play-pause; mocp -G"</command>
+      </action>
+    </keybind>
   </keyboard>
   <mouse>
     <dragThreshold>1</dragThreshold>

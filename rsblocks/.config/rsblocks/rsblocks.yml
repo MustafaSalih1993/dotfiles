@@ -3,6 +3,13 @@
 seperator: '┃'
 
 
+brightness:
+  icon: ''
+  delay: 60.0 
+  enabled: false
+  path: '/sys/class/backlight/intel_backlight'
+
+
 bitcoins:
   icon: ''
   delay: 60.0 

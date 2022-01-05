@@ -86,10 +86,12 @@ alias la="lsd -A --color=auto"
 alias ls="lsd  --color=auto"
 alias ll="lsd -l  --color=auto"
 alias grep='rg --color=auto'
+alias insomnia='insomnia --no-sandbox'
+alias emacs='emacsclient -c -a "emacs"'
 # alias up directory
 alias ..="cd .."
 # starts emacs without GUI
-alias e="emacs -nw"
+alias e="emacsclient -nw"
 # update Gentoo mirrors by selecting the fastest 3 mirrors
 alias mkmirror="doas mirrorselect -s3 -b10 -D"
 # update Gentoo repository and update the system

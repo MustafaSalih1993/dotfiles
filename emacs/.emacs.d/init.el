@@ -2,6 +2,9 @@
 (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
 (package-initialize)
 
+;forcing scrollbars to disabled
+(add-to-list 'default-frame-alist
+             '(vertical-scroll-bars . nil))
 
 ;; Sidebar file explorer (https://github.com/sebastiencs/sidebar.el)
 ;;
@@ -26,16 +29,18 @@
 (global-set-key (kbd "C-x w") 'elfeed)                     ;; starts elfeed rss client
 (global-set-key(kbd "C-c /") 'comment-line)                ;; comment binding
 (load-theme 'mustafa2 t)  	                           ;; loading the theme
+;(set-frame-font "SauceCodePro Nerd Font Mono-12" nil t)    ;; changing the default font
+(setq default-frame-alist '((font .  "SauceCodePro Nerd Font Mono-12"))) ; same as above
+(tool-bar-mode -1)                                         ;; disabling toolbar
 (menu-bar-mode -1)                                         ;; Disable menu bar
 (scroll-bar-mode -1)                                       ;; disabling scrollbar
-(set-frame-font "SauceCodePro Nerd Font Mono-12" nil t)    ;; changing the default font
 (setq backup-directory-alist '(("" . "~/.emacs.d/backup")));; backup files dir
 (setq display-line-numbers-type 'relative)                 ;; display the numbers relative
 (setq inhibit-startup-screen t)
 (setq visible-bell 1)
 (show-paren-mode)				           ;; Show Matching parenths
 (simple-modeline-mode)                                     ;; simplemodeline(emacs's bottom line)
-(tool-bar-mode -1)                                         ;; disabling toolbar
+
 
 
 ;; custom function to reload emacs configs without closing it
